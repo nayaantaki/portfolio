@@ -1,0 +1,240 @@
+{
+  "marin3d": {
+    "title": "Marin:3D",
+    "overview": "A physical translation of Marin County's coastal topography into a tactile relief map, exploring how cartographic data can be experienced through touch and form rather than visual abstraction alone. Traditional topographic maps rely heavily on the ability to mentally translate contour lines into three-dimensional space. By converting 2D contour lines into a 3D printed terrain model, this project questions who gets to access geographic information and how alternative representations can create more inclusive ways of understanding landscape.",
+    "secondarySection": {
+      "title": "process",
+      "body": "The project began with downloading a Digital Elevation Model (DEM) from OpenTopography as a GeoTIFF, which was then imported into QGIS and processed using the HCMGIS and Qgis2threejs plugins to convert the 2D heightmap into a 3D mesh exported as a .glb file. That mesh was refined in Blender, exported as an .stl, and sliced in PrusaSlicer before being printed on a Prusa MK4S in white PLA. In parallel, a 1950 USGS topographic map of the Tennessee Valley region was sourced from TopoView, edited in Photoshop with threshold adjustments and masking, and printed on satin poster paper using an HP DesignJet Z9+ plotter."
+    },
+    "tools": [
+      {
+        "name": "QGIS",
+        "icon": "../../../assets/icons/tools/250px-QGIS_logo_new.svg.png",
+        "alt": "QGIS"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "icon": "../../../assets/icons/tools/250px-Adobe_Photoshop_CC_icon.svg.png",
+        "alt": "Adobe Photoshop"
+      },
+      {
+        "name": "PrusaSlicer",
+        "icon": "../../../assets/icons/tools/prusa slicer.png",
+        "alt": "PrusaSlicer"
+      }
+    ],
+    "mediaLayout": "mosaic",
+    "images": [
+      {
+        "slot": "feature",
+        "src": "../../../assets/project files/marin3D/imgs/IMG_7596.jpeg",
+        "alt": "Marin3D featured project photo"
+      },
+      {
+        "slot": "sideTop",
+        "src": "../../../assets/project files/marin3D/imgs/Screenshot 2026-02-12 182308.png",
+        "alt": "Marin3D workflow screenshot"
+      },
+      {
+        "slot": "thumb1",
+        "src": "../../../assets/project files/marin3D/imgs/IMG_7499.jpeg",
+        "alt": "Marin3D project photo 1"
+      },
+      {
+        "slot": "thumb2",
+        "src": "../../../assets/project files/marin3D/imgs/CA_Tamalpais_298980_1897_62500.jpg.png",
+        "alt": "Marin3D terrain map reference"
+      },
+      {
+        "slot": "sideTall",
+        "src": "../../../assets/project files/marin3D/imgs/IMG_7602.jpeg",
+        "alt": "Marin3D project photo 3"
+      }
+    ]
+  },
+  "xrlabstickers": {
+    "title": "XR Lab Stickers",
+    "overview": "Designed a set of 4 stickers for the XR Lab at Northeastern University to support student engagement and lab advertising during campus outreach events. The stickers were designed to be visually appealing and representative of the lab's focus on immersive technologies, with the goal of attracting students to learn more about the lab's resources and opportunities.",
+    "secondarySection": {
+      "title": "outcomes",
+      "body": "Expanded the XR Lab's campus presence by introducing immersive technology resources to a broader student audience. Through consistent outreach and engagement, drove increased student interest in XR Lab services and grew weekly reservation activity."
+    },
+    "tools": [
+      {
+        "name": "Adobe Photoshop",
+        "icon": "../../../assets/icons/tools/250px-Adobe_Photoshop_CC_icon.svg.png",
+        "alt": "Adobe Photoshop"
+      }
+    ],
+    "mediaLayout": "grid-2x2",
+    "images": [
+      {
+        "src": "../../../assets/project files/xr lab/imgs/experience it.png",
+        "alt": "XR Lab sticker design: Experience It"
+      },
+      {
+        "src": "../../../assets/project files/xr lab/imgs/headset burst.png",
+        "alt": "XR Lab sticker design: headset burst"
+      },
+      {
+        "src": "../../../assets/project files/xr lab/imgs/vive man sticker.png",
+        "alt": "XR Lab sticker design: Vive Man"
+      },
+      {
+        "src": "../../../assets/project files/xr lab/imgs/xr lab logo.png",
+        "alt": "XR Lab logo sticker"
+      }
+    ]
+  },
+  "murderinthebay": {
+    "title": "\"Murder\" in the Bay",
+    "overview": "A cartographic record of American Crow sightings across the San Francisco Bay Area, exploring how urban density shapes the spatial behavior of one of the city's most familiar yet overlooked inhabitants. Conventional wildlife distribution maps treat observation points as neutral data, just dots on a surface. This map asks what those concentrations reveal about the relationship between human settlement and animal presence. By layering crow sightings drawn from various institutional and research datasets over a 25 year period (2001–2026) against the Bay Area's topographic and urban fabric, “Murder” in the Bay examines how crows don't merely tolerate cities, but actively orient themselves within them.",
+    "secondarySection": {
+      "title": "process",
+      "body": "To create the poster, American Crow occurrence records spanning 2001–2026 were downloaded from GBIF as a Simple CSV, then processed in Python using pandas to extract valid coordinate pairs and export a cleaned dataset. The filtered data was brought into QGIS as a WGS 84 delimited text layer and composited over a Digital Elevation Model sourced from the USGS National Map (3DEP 1/3 arc-second GeoTIFF), with point styling applied to reflect observation density across the Bay Area. Individual USGS 1:24,000-scale topographic tiles from 2021 were manually assembled into a contiguous basemap in Photoshop, where typography, legend, and layout were refined. The final composition was exported and printed on satin poster paper via an HP DesignJet Z9+."
+    },
+    "tools": [
+      {
+        "name": "Adobe Photoshop",
+        "icon": "../../../assets/icons/tools/250px-Adobe_Photoshop_CC_icon.svg.png",
+        "alt": "Adobe Photoshop"
+      },
+      {
+        "name": "QGIS",
+        "icon": "../../../assets/icons/tools/250px-QGIS_logo_new.svg.png",
+        "alt": "QGIS"
+      }
+    ],
+    "mediaLayout": "mosaic-2",
+    "images": [
+      {
+        "slot": "feature",
+        "src": "../../../assets/project files/murder/imgs/murder in the bay.png",
+        "alt": "Murder in the Bay main poster"
+      },
+      {
+        "slot": "sideTall",
+        "src": "../../../assets/project files/murder/imgs/csv.png",
+        "alt": "Murder in the Bay parsed csv data"
+      },
+      {
+        "slot": "bottomWide",
+        "src": "../../../assets/project files/murder/imgs/image.png",
+        "alt": "Murder in the Bay data georeferenced data"
+      }
+    ]
+  },
+  "ezesportsfactoradvert": {
+    "title": "EZ Esports x Factor_ Advert",
+    "overview": "Developed and executed Factor_ meal service advertising campaign for EZ Esports’ Twitch channel, generating revenue through live broadcast integration and viewer engagement.",
+    "secondarySection": {
+      "title": "outcomes",
+      "body": "Produced Factor-sponsored ad spots in Adobe Premiere Pro, incorporating brand messaging and call-to-action graphics, then integrated them into the OBS broadcast suite as triggered media sources for seamless live deployment during tournaments — generating $750 in sponsorship revenue from a single stream."
+    },
+    "tools": [
+      {
+        "name": "Adobe Premiere Pro",
+        "icon": "../../../assets/icons/tools/250px-Adobe_Premiere_Pro_CC_icon.svg.png",
+        "alt": "Adobe Premiere Pro"
+      }
+    ],
+    "mediaLayout": "media-stack-2",
+    "videos": [
+      {
+        "url": "https://youtu.be/0OkH676hduA",
+        "title": "EZ Esports x Factor Ad Cut 1"
+      },
+      {
+        "url": "https://youtu.be/pux34FSazhw",
+        "title": "EZ Esports x Factor Ad Cut 2"
+      }
+    ]
+  },
+  "evc": {
+    "title": "Elements of Visual Composition",
+    "overview": "A comprehensive exploration of 2D art and design principles through the creation of a final portfolio showcasing mastery of visual composition techniques.",
+    "secondarySection": {
+      "title": "takeaways",
+      "body": "Developed a foundational understanding of 2D art and design principles through both study and studio practice, exploring concepts including balance, rhythm, pattern, emphasis, contrast, unity, movement, and the core visual elements of line, shape, space, value, color, and texture. Coursework combined critical analysis of visual design theory with hands-on compositional and color exercises. Culminated in a final portfolio of original works demonstrating mastery of visual composition techniques and principles, showcasing the ability to create engaging and effective designs across a range of media and formats."
+    },
+    "tools": [
+      {
+        "name": "Various Analog and Digital Tools",
+        "alt": "Tool 1"
+      }
+    ],
+    "mediaLayout": "media-stack-2",
+    "videos": [
+      {
+        "type": "pdf",
+        "src": "../../../assets/project files/evc/imgs/Final Portfolio - EVC Fall '25 (1).pdf",
+        "alt": "EVC portfolio PDF preview"
+      },
+      {
+        "type": "image",
+        "src": "../../../assets/project files/evc/imgs/Screenshot 2026-03-13 105418.png",
+        "alt": "EVC screenshot preview"
+      }
+    ]
+  },
+  "ezesports": {
+    "title": "EZ Esports Broadcasting Suite",
+    "overview": "Developed custom Twitch overlay graphics for live broadcasting of competitive play in VALORANT, League of Legends, and Tetris complete with OBS scene integration and controls.",
+    "secondarySection": {
+      "title": "outcomes",
+      "body": "Elevated broadcast production quality on Twitch by designing a cohesive overlay system with dynamic team name integration, sponsor rotation, and real-time game elements. Built a modular OBS scene collection with 6+ broadcast states — lobby, champion select, in-game, and end screen — featuring coordinated transitions, hotkey-controlled elements, and Twitch chat integration controlled by webhooks. The overlay architecture supported 20+ unique teams with seamless customization, accommodating tournament brackets, regular season play, and special events without requiring redesign between matches."
+    },
+    "tools": [
+      {
+        "name": "OBS Studio",
+        "icon": "../../../assets/icons/tools/OBS_Studio_Logo.svg.png",
+        "alt": "OBS Studio"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "icon": "../../../assets/icons/tools/250px-Adobe_Photoshop_CC_icon.svg.png",
+        "alt": "Adobe Photoshop"
+      },
+      {
+        "name": "JSON",
+        "icon": "../../../assets/icons/tools/JSON_vector_logo.svg.png",
+        "alt": "JSON"
+      },
+      {
+        "name": "Twitch",
+        "icon": "../../../assets/icons/tools/Twitch_icon_2012.svg.png",
+        "alt": "Twitch"
+      }
+    ],
+    "mediaLayout": "grid-2x3-16x9",
+    "images": [
+      {
+        "src": "../../../assets/project files/ez esports/imgs/agent select val.png",
+        "alt": "agent select val"
+      },
+      {
+        "src": "../../../assets/project files/ez esports/imgs/in game val.png",
+        "alt": "in game val"
+      },
+      {
+        "src": "../../../assets/project files/ez esports/imgs/lobby val.png",
+        "alt": "lobby val"
+      },
+      {
+        "src": "../../../assets/project files/ez esports/imgs/league in game.png",
+        "alt": "league in game"
+      },
+      {
+        "src": "../../../assets/project files/ez esports/imgs/tetris in game.png",
+        "alt": "tetris in game"
+      },
+      {
+        "src": "../../../assets/project files/ez esports/imgs/Next Game.png",
+        "alt": "next game"
+      }
+    ]
+
+  }
+
+
+}
