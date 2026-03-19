@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   mounts.forEach((mount) => {
     const assetsPrefix = mount.getAttribute('data-assets-prefix') || '../../assets';
-    const homeHref = mount.getAttribute('data-home-href') || '../index.html';
+    const homeHref = mount.getAttribute('data-home-href') || '/';
     const homeLabel = mount.getAttribute('data-home-label') || 'NoA';
 
     mount.innerHTML = `
