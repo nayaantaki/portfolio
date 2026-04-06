@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="../../assets/smiley%20favicon.png" />
+  <link rel="stylesheet" href="../../css/project-page.css" />
+  <script src="../../js/nav-bar.js" defer></script>
+  <script src="../../js/theme-toggle.js" defer></script>
+  <script src="../../js/project-image-lightbox.js" defer></script>
+  <title>nayaantaki</title>
+</head>
+<body>
+
+  <div data-site-nav data-assets-prefix="../../assets" data-home-href="../../" data-home-label="↖ home"></div>
+
+  <main class="case-shell">
+    <section class="case-study-layout">
+      <div class="case-study-left">
+        <header class="case-title-box">Marin:3D</header>
+
+        <section class="case-text-panel">
+          <h2 class="section-chip">overview</h2>
+          <div class="section-box">
+            A physical translation of Marin County's coastal topography into a tactile relief map, exploring how cartographic data can be experienced through touch and form rather than visual abstraction alone. Traditional topographic maps rely heavily on the ability to mentally translate contour lines into three-dimensional space. By converting 2D contour lines into a 3D printed terrain model, this project questions who gets to access geographic information and how alternative representations can create more inclusive ways of understanding landscape.
+          </div>
+
+          <div class="case-detail-columns">
+            <div class="case-detail-column">
+              <h2 class="section-chip">process</h2>
+              <div class="section-box">
+                The project began with downloading a Digital Elevation Model (DEM) from OpenTopography as a GeoTIFF, which was then imported into QGIS and processed using the HCMGIS and Qgis2threejs plugins to convert the 2D heightmap into a 3D mesh exported as a .glb file. That mesh was refined in Blender, exported as an .stl, and sliced in PrusaSlicer before being printed on a Prusa MK4S in white PLA. In parallel, a 1950 USGS topographic map of the Tennessee Valley region was sourced from TopoView, edited in Photoshop with threshold adjustments and masking, and printed on satin poster paper using an HP DesignJet Z9+ plotter.
+              </div>
+            </div>
+
+            <div class="case-detail-column">
+              <h2 class="section-chip">tools</h2>
+              <div class="section-box">
+                <div class="tool-lines" aria-label="Software used">
+                  <div class="tool-line">
+                    <img class="tool-line-icon" src="../../assets/icons/tools/250px-QGIS_logo_new.svg.png" alt="QGIS" />
+                    <span class="tool-line-label">QGIS</span>
+                  </div>
+                  <div class="tool-line">
+                    <img class="tool-line-icon" src="../../assets/icons/tools/250px-Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop" />
+                    <span class="tool-line-label">Adobe Photoshop</span>
+                  </div>
+                  <div class="tool-line">
+                    <img class="tool-line-icon" src="../../assets/icons/tools/prusa slicer.png" alt="PrusaSlicer" />
+                    <span class="tool-line-label">PrusaSlicer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="case-study-right" aria-label="Project visuals">
+        <div class="case-study-media layout-mosaic">
+          <div class="mosaic-left">
+            <div class="case-study-media-item slot-feature">
+              <img class="media-img" src="../../assets/project-files/marin3D/imgs/IMG_7596.jpeg" alt="Marin3D featured project photo" />
+            </div>
+            <div class="mosaic-bottom-row">
+              <div class="case-study-media-item slot-thumb1">
+                <img class="media-img" src="../../assets/project-files/marin3D/imgs/IMG_7499.jpeg" alt="Marin3D project photo 1" />
+              </div>
+              <div class="case-study-media-item slot-thumb2">
+                <img class="media-img" src="../../assets/project-files/marin3D/imgs/CA_Tamalpais_298980_1897_62500.jpg.png" alt="Marin3D terrain map reference" />
+              </div>
+            </div>
+          </div>
+          <div class="mosaic-right">
+            <div class="case-study-media-item slot-sideTop">
+              <img class="media-img" src="../../assets/project-files/marin3D/imgs/Screenshot 2026-02-12 182308.png" alt="Marin3D workflow screenshot" />
+            </div>
+            <div class="case-study-media-item slot-sideTall">
+              <img class="media-img" src="../../assets/project-files/marin3D/imgs/IMG_7602.jpeg" alt="Marin3D project photo 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
