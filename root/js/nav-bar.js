@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="${homeHref}" class="nav-logo">${homeLabel}</a>
         <div class="nav-links">
           <div class="home-icon-links">
-            <a href="https://github.com/nayaantaki" class="home-icon-link github" aria-label="GitHub">
+            <a href="https://github.com/nayaoantaki" class="home-icon-link github" aria-label="GitHub">
               <img src="${assetsPrefix}/icons/nav/Octicons-mark-github.svg" alt="GitHub" />
             </a>
             <a href="https://www.linkedin.com/in/nayaoantaki/" class="home-icon-link" aria-label="LinkedIn">
