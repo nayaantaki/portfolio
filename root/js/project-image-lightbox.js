@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeIcon = document.createElement('img');
   closeIcon.className = 'image-lightbox-close-icon';
-  closeIcon.src = '../../../assets/icons/close_small_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg';
+  closeIcon.src = '../../assets/icons/close_small.svg';
   closeIcon.alt = '';
   closeIcon.setAttribute('aria-hidden', 'true');
 
