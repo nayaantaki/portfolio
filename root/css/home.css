@@ -637,6 +637,93 @@ nav {
 }
 
 
+/* ─── COMPUTER SCIENCE WORK ─────────────────────────────────────────────── */
+
+.cs-section {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 2px solid var(--border-light);
+}
+
+.cs-section-header {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.cs-section-kicker {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg);
+}
+
+.cs-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cs-card {
+  border: 2px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  border-radius: 18px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 8%, transparent), color-mix(in srgb, var(--accent) 3%, transparent));
+  padding: 18px 18px 16px;
+  min-height: 168px;
+  display: grid;
+  gap: 12px;
+}
+
+.cs-card-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.cs-card-badge,
+.cs-card-status,
+.cs-card-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.cs-card-badge {
+  color: color-mix(in srgb, var(--accent) 72%, var(--fg));
+}
+
+.cs-card-status {
+  color: var(--accent);
+}
+
+.cs-card-title {
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.cs-card-copy {
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.cs-card-meta {
+  margin-top: auto;
+  color: color-mix(in srgb, var(--accent) 72%, var(--fg));
+}
+
+.cs-card:hover {
+  border-color: var(--accent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, transparent), color-mix(in srgb, var(--accent) 5%, transparent));
+}
+
+
 /* ─── RESPONSIVE ─────────────────────────────────────────────────────────── */
 
 @media (max-width: 1100px) {
@@ -656,4 +743,5 @@ nav {
   .overlay-body  { grid-template-columns: 1fr; align-items: start; }
   .overlay-copy  { grid-template-columns: 1fr; }
   .snapshot-grid { grid-template-columns: 1fr; }
+  .cs-card-grid   { grid-template-columns: 1fr; }
 }
